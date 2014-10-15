@@ -3,3 +3,4 @@ looked up parseInt 1pt
 2 points all else
 
 array
+looked up array spec
