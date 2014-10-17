@@ -97,7 +97,21 @@ define(function() {
    },
 
    curryIt : function(fn) {
-      console.log(fn);
+      //a nigth of reasearch on currys and a lot of chewing and 
+      //doing it wrong, then figuring it out, then looking
+      //at their answer, then going to bed, getting up and writng 
+      //this which I think is much better than their answer....
+      var args = [], curry; 
+
+      curry = function (arg) {
+         args.push(arg);
+         if (args.length === fn.length) {
+            return fn.apply(null, args);
+         }
+         return curry;
+      };
+
+      return curry;
    }
   };
 });
