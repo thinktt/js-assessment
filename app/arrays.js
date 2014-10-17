@@ -57,6 +57,7 @@ define(function() {
     },
 
     concat : function(arr1, arr2) {
+        //MDN spec
         return arr1.concat(arr2);
     },
 
@@ -83,7 +84,7 @@ define(function() {
             testNum = arr.shift();
             //noticded... this should cauese problem splice 
             //reduces lenght! still somehow it's passing...
-            //i-- should fi it...
+            //i-- should fix it... I think...
             for (i=0; i<arr.length; i++) {
                 if(arr[i] === testNum) {
                     isDup = true;

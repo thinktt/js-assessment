@@ -1,8 +1,25 @@
 if (typeof define !== 'function') { var define = require('amdefine')(module); }
 
 define(function() {
+  //MDN spec for % operator (it's been a while)
   return {
     fizzBuzz : function(num) {
+    var str = '';
+    if((typeof num) !== 'number') return false;
+    
+    if((num % 3 === 0) && (num % 5 === 0)) {
+      str = 'fizzbuzz';
+    } else if (num % 5 === 0) {
+      str = 'buzz';
+    } else if (num % 3 === 0) {
+      str = 'fizz';
+    } else {
+      str = num;
+    }
+
+    return str;
+    //if()
+
       // write a function that receives a number as its argument;
       // if the number is divisible by 3, the function should return 'fizz';
       // if the number is divisible by 5, the function should return 'buzz';

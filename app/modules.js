@@ -21,15 +21,3 @@ define(function() {
 
 
 var testMod = createModule('Howdy', 'Bob');
-
-console.log(testMod.sayIt());
-console.log(testMod.greeting);
-console.log(testMod.name);
-
-
-testMod.greeting = 'Yo';
-testMod.name = 'Adrian';
-
-console.log(testMod.sayIt());
-console.log(testMod.greeting);
-console.log(testMod.name);
