@@ -44,6 +44,11 @@ define(function() {
    },
 
    partial : function(fn, str1, str2) {
+      //After completing I looked at answer:
+      //they use fn.call() for this...
+      // return function(str3) {
+      //   return fn.call(null, str1, str2, str3);
+      // };
       var partialFunc = function(punctuation) {
          return fn(str1, str2, punctuation);
       };
@@ -53,6 +58,11 @@ define(function() {
    },
 
    useArguments : function(a, b, c , d) {
+      //Looking answer after:
+      //they use a loop, which is more veratile
+      //as you can continue to push arguments
+      //of any amount, also they leave the definition
+      //arugments blank
       var sum = 0;
       if(a) sum = sum + a; 
       if(b) sum = sum + b; 
@@ -63,6 +73,18 @@ define(function() {
    },
 
    callIt : function(fn, a, b, c) {
+      //Looking at answer after:
+      //they use fn.apply for this...
+      //I think I totally did this wrong...
+      
+      //There answer (don't specify arugment above):
+      // var args = Array.prototype.slice.call(arguments, 1, arguments.length);
+      // fn.apply(null, args);
+
+      //that Array.prototype stuff messes with my head a bit but
+      //I think it's mainly to turn the argument into a proper
+      //array
+      
       //stack overflow for this one, then MDN spec
       //I did not know this fn.length, and I also learned 
       //about the arguments object, very cool...
@@ -94,10 +116,22 @@ define(function() {
       };
 
       return partialInner; 
+
    },
 
    curryIt : function(fn) {
-      console.log(fn);
+      //after a lot of reasearch (I didn't know how to do this)
+      //I came up with this... simple but don't think it's really
+      //what they want...
+      var curry = function (a) {
+         return function(b) {
+            return function(c) {
+               return fn(a,b,c);
+            };
+         };
+      };
+
+      return curry;
    }
   };
 });
