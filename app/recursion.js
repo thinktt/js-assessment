@@ -8,7 +8,7 @@ define(function() {
     	var i, files = [];
 
     	if(dirName) {
-    		return this.permute(data, dirName);
+    		return this.getDirFiles(data, dirName);
     	}
 
     	for(i=0; i < data.files.length; i++) {
@@ -21,7 +21,7 @@ define(function() {
     	return files;
     },
 
-    permute: function(data, dirName) {
+    getDirFiles: function(data, dirName) {
     	var i, files;
     	if(data.dir === dirName) {
     		return this.listFiles(data);
@@ -29,11 +29,13 @@ define(function() {
 
     	for(i=0; i < data.files.length; i++) {
     		if(typeof data.files[i] === 'object') {
-    			return this.permute(data.files[i], dirName);
+    			return this.getDirFiles(data.files[i], dirName);
     		}
     	}
+    },
 
-
+    permute: function(arr) {
+    	console.log(arr);
     }
   };
 });
