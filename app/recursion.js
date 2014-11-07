@@ -35,7 +35,31 @@ define(function() {
     },
 
     permute: function(arr) {
-    	console.log(arr);
+			
+			function getPermutation(list) {
+				var arr = list.slice();
+				var permutations;
+				var permsList = [];
+				var current; 
+				var i, j;
+
+				if(list.length === 1) return [arr];
+
+				for(i=0; i<list.length; i++) { 
+					current = list[i];
+					arr = list.slice();
+					arr.splice(i,1);
+
+					permutations = getPermutation(arr); 
+					for(j=0; j<permutations.length; j++) {
+						permutations[j].unshift(current);
+						permsList.push(permutations[j]);
+					}
+				}
+				return permsList;
+			}
+    	
+    	return getPermutation(arr);
     }
   };
 });
