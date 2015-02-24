@@ -1,0 +1,282 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"of",
+				"offspring"
+			],
+			[
+				"re",
+				"reproduce"
+			],
+			[
+				"get",
+				"getRandInt"
+			],
+			[
+				"max",
+				"maxForEvenDist"
+			],
+			[
+				"getRa",
+				"getCryptoRandInt"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 135.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 402.0
+	},
+	"console":
+	{
+		"height": 264.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Public/toby/local/Interim Winter Break 2014-2015",
+		"/C/Users/Public/toby/local/Spring 2015",
+		"/C/Users/Public/toby/local/Lauren Letter.txt",
+		"/C/Users/Public/toby/casie/config/routes.js",
+		"/C/Users/Public/toby/casie/app/controllers/users.js",
+		"/C/Users/Public/toby/casie/app/views/home/editUser.jade",
+		"/C/Users/Public/toby/casie/app/models/user.js",
+		"/C/Users/Public/toby/Notes/linux notes",
+		"/C/Users/Public/toby/local/dec 10 timesheets",
+		"/C/Users/Public/toby/js-puzzles/getRandInts.js",
+		"/C/Users/Public/toby/js-puzzles/trueRandom.js",
+		"/C/Users/Public/toby/js-puzzles/weasel.js",
+		"/C/Users/Public/toby/js-puzzles/main.js",
+		"/C/Users/Public/toby/CM11/Data/Users/Toby/20 Rated Games/00-NextApponent.txt",
+		"/C/Users/Public/toby/local/Schedules Finals End 2014",
+		"/C/Users/Public/toby/local/Special Time Sheets",
+		"/C/Users/Public/toby/CM11/Data/Users/Toby/Toby.lay",
+		"/C/Users/Public/toby/CM11/Data/Users/Toby/Toby.ini",
+		"/C/Users/Public/toby/CM11/Data/Users/Toby/Toby's Rated Games.PGN",
+		"/C/Users/Public/toby/CM11/Data/Users/Toby/Toby.usr",
+		"/C/Users/Public/toby/CM11/Data/Users/Toby/Toby.ppts",
+		"/C/Users/Public/toby/CM11/Data/Users/Toby/tdata/20.dat",
+		"/C/Users/Public/toby/casie/app/controllers/api.js",
+		"/C/Users/Public/toby/casie/app/models/block.js",
+		"//blender/homes/t/e/tet5517/nt/AccountSettings/Desktop/local/End of Sememester Hours",
+		"/C/Users/Public/toby/casie/node_modules/aws-sdk/index.js",
+		"/C/Users/Public/toby/casie/node_modules/blanket/docs/intermediate_node.md",
+		"/C/Users/Public/toby/casie/node_modules/grunt-mocha-cov/lib/instrument.js",
+		"/C/Users/Public/toby/casie/node_modules/karma-phantomjs-launcher/node_modules/phantomjs/install.js",
+		"/C/Users/Public/toby/casie/config/config.js",
+		"/C/Users/Public/toby/casie/app.js",
+		"//blender/homes/t/e/tet5517/nt/AccountSettings/Desktop/test.js",
+		"/C/Users/Public/toby/SublimeTextNew/changelog.txt",
+		"//blender/homes/t/e/tet5517/nt/AccountSettings/Desktop/local/SL Reports",
+		"/C/Users/Public/toby/Dev/Sublime Text 3/Data/Packages/User/SublimeLinter.sublime-settings",
+		"/E/Dev/Sublime Text 3/Data/Packages/User/SublimeLinter.sublime-settings",
+		"/E/Dev/Sublime Text 3/Data/Packages/Default/Preferences.sublime-settings",
+		"/E/Dev/Sublime Text 3/Data/Packages/User/JSON.sublime-settings",
+		"/E/Dev/GitPortable/Data/settings/GitPortableSettings.ini",
+		"/C/Users/Public/toby/fun/fun.js",
+		"//blender/homes/t/e/tet5517/nt/AccountSettings/Desktop/local/endOfSummer",
+		"//blender/homes/t/e/tet5517/nt/AccountSettings/Desktop/local/Interim End of Summer 2014",
+		"//blender/homes/t/e/tet5517/nt/AccountSettings/Desktop/Sl Meeting 7-9-14",
+		"/C/Users/Public/toby/Notes/casieAtWork.txt",
+		"/C/Users/Public/toby/githubcss/github2-um.css",
+		"/C/Users/Public/toby/githubcss/github-um.css",
+		"/C/Users/Public/toby/githubcss/github.css",
+		"/C/Users/Public/toby/GitHub-Dark/github-dark.css",
+		"//blender/homes/t/e/tet5517/nt/AccountSettings/Desktop/Interim End of Summer 2014",
+		"/E/startssl/sub.class1.server.ca.pem",
+		"/E/startssl/ssl.key",
+		"/E/startssl/startssl.cert",
+		"/E/Docs/server.crt",
+		"/E/Docs/ca.crt",
+		"/C/Users/Public/toby/thinktt/index.html",
+		"/E/startssl/mystartsslcert.pfx",
+		"/C/Users/Public/toby/ngTest/bootstrap.css",
+		"/C/Users/Public/toby/ngTest/test.html",
+		"/C/Users/Public/toby/ngTest/signUp/test.html",
+		"/C/Users/Public/toby/server/server.js",
+		"/C/Users/Public/toby/server/package.json",
+		"/C/Users/Public/toby/server/.gitignore",
+		"/C/Users/Public/toby/server/.git/.gitignore",
+		"/C/Users/Public/toby/Notes/html5",
+		"/C/Users/Public/toby/mindCrypt/index.html",
+		"/C/Users/Public/toby/mindCrypt/js/bootstrap.js",
+		"//blender/homes/t/e/tet5517/nt/AccountSettings/Desktop/.localized",
+		"/C/Users/Public/toby/Dev/GitPortable/App/Git/StartGitBash.bat",
+		"/C/Users/Public/toby/Dev/GitPortable/App/Git/git-bash.bat",
+		"/C/Users/Public/toby/Dev/GitPortable/App/Git/Git Bash.vbs",
+		"//blender/homes/t/e/tet5517/nt/AccountSettings/Desktop/SL Virtues",
+		"/C/Users/Public/toby/mindCrypt/js/mindCrypt.js",
+		"/C/Users/Public/toby/Dev/node/setpath.bat",
+		"/C/Users/Public/toby/mindCrypt/magic.js",
+		"/C/Users/Public/toby/Dev/Sublime Text 3/Data/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/C/Users/Public/toby/Dev/Sublime Text 3/Data/Packages/User/Package Control.sublime-settings",
+		"/C/Users/Public/toby/Dev/node/jshint.cmd",
+		"/C/Users/Public/toby/Dev/Sublime Text 3/Data/Packages/User/Preferences.sublime-settings",
+		"/E/Apps/Sublime2/Data/Packages/User/Package Control.sublime-settings",
+		"/C/Users/Public/toby/Sublime Text 3/Data/Packages/User/41 49 52",
+		"/C/Users/Public/toby/Sublime Text 3/Data/Packages/User/GrandsonOfObsidianToby.tmTheme",
+		"/E/Apps/Sublime2/Data/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Public/toby/Sublime Text 3/Data/Packages/User/Package Control.sublime-settings",
+		"/E/Apps/Sublime2/Data/Packages/Custom Themes/GrandsonOfObsidian.tmTheme",
+		"/C/Users/Public/toby/Sublime Text 3/Data/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Public/toby/Sublime Text 3/Data/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"5",
+			"validate",
+			"var",
+			"path",
+			" 253 ",
+			"Endeavour",
+			"diff-line-code-addition",
+			"diff-line-code"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "score.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\Public\\toby\\irm-project.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 154.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

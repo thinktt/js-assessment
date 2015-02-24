@@ -4,3 +4,6 @@ looked up parseInt 1pt
 
 array
 looked up array spec
+
+numbers 
+I did not know how to do any of this used MDN and stackOverFlow
