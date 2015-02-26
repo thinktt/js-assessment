@@ -1,23 +1,28 @@
 if (typeof define !== 'function') { var define = require('amdefine')(module); }
 
-var nums = [1,2,3,4]; 
+//var nums = []; 
 
 define(function () {
   return {
     count : function (start, end) {
-    	var i, count, interval;  
+    	var i, count, interval, cancel;  
 
 			i=start;
-			//nums = [start];
+			console.log(i);
 
 			count = function(){
 				i++;
-				//nums.push(i);
-				console.log(nums);
-				if(i>end) clearInterval(interval);
+				console.log(i);
+				if(i>=end) cancel();
+			};
+
+			cancel = function() {
+				clearInterval(interval);
 			};
 
 			interval = setInterval(count, 100);
+
+			return {cancel: cancel};
     }
   };
 });
