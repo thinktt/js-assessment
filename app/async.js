@@ -1,4 +1,5 @@
 if (typeof define !== 'function') { var define = require('amdefine')(module); }
+var globey;
 
 define([ 'jquery' ], function($) {
   return {
@@ -7,6 +8,10 @@ define([ 'jquery' ], function($) {
     },
 
     manipulateRemoteData : function(url) {
+
+    	$.getJSON(url, function(data){
+    		globey = data.people; 
+    	});
 
     }
   };

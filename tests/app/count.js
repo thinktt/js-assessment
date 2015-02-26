@@ -1,5 +1,5 @@
 /*jshint expr:true */
-/*globals describe:true, it:true, expect:true, beforeEach:true, console:true */
+/*globals describe:true, it:true, expect:true, afterEach: true, beforeEach:true, console:true */
 if (typeof define !== 'function') { var define = require('amdefine')(module); }
 if (typeof expect !== 'function') { var expect = require('expect.js'); }
 
@@ -13,19 +13,25 @@ define([
    * return an object with a cancel method, which should cancel the counting.
    */
   describe('counter', function () {
-    var nums;
+    var nums, origConsoleLog;
 
     beforeEach(function () {
       nums = [];
 
       if (typeof console === 'undefined') {
-        console = {};
+        console = {log: undefined};
       }
 
+      origConsoleLog = console.log;
       console.log = function (val) {
         nums.push(val);
       };
     });
+
+    afterEach(function () {
+      console.log = origConsoleLog;
+    });
+
 
     it('should count from start number to end number, one per 1/10th of a second', function (done) {
       this.timeout(600);
