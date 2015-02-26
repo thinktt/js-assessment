@@ -57,18 +57,27 @@ define(function() {
 
    },
 
-   useArguments : function(a, b, c , d) {
+   useArguments : function() {
       //Looking answer after:
       //they use a loop, which is more veratile
       //as you can continue to push arguments
       //of any amount, also they leave the definition
-      //arugments blank
-      var sum = 0;
-      if(a) sum = sum + a; 
-      if(b) sum = sum + b; 
-      if(c) sum = sum + c; 
-      if(d) sum = sum + d;
+      //arugments blank.. my incorrect way....
+      // function(a, b, c ,d) {
+      //    var sum = 0;
+      //    if(a) sum = sum + a; 
+      //    if(b) sum = sum + b; 
+      //    if(c) sum = sum + c; 
+      //    if(d) sum = sum + d;
+      //    return sum; 
+      // }
+      //correct....
+      var i, sum = 0; 
+      for(i=0; i<arguments.length; i++){
+         sum = sum + arguments[i];
+      }
       return sum; 
+
 
    },
 
