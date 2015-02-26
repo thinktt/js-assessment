@@ -86,7 +86,7 @@ define(function() {
       //they use fn.apply for this...
       //I think I totally did this wrong...
       
-      //There answer (don't specify arugment above):
+      //Their answer (don't specify arugment above):
       // var args = Array.prototype.slice.call(arguments, 1, arguments.length);
       // fn.apply(null, args);
 
@@ -128,11 +128,11 @@ define(function() {
 
    },
 
+   //a nigth of reasearch on currys and a lot of chewing and 
+   //doing it wrong, then figuring it out, then looking
+   //at their answer, then going to bed, getting up and writng 
+   //this which I think is much better than their answer....
    curryIt : function(fn) {
-      //a nigth of reasearch on currys and a lot of chewing and 
-      //doing it wrong, then figuring it out, then looking
-      //at their answer, then going to bed, getting up and writng 
-      //this which I think is much better than their answer....
       var args = [], curry; 
 
       curry = function (arg) {
