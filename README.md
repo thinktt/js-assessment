@@ -19,7 +19,7 @@ You can then view the tests in your browser at
 ## To look at my solutions for each test
 Refer to the test themselves in the `tests/app` folder.
 
-See my solutions to the test the `app/` folder.
+See my solutions to the test in the `app/` folder.
 
 
 
